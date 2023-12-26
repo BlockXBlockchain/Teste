@@ -1,0 +1,583 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-image: linear-gradient(to right, #74ff52, #49a3ec);
+}
+
+    .logo{
+        min-height: 160px;
+        height: auto; /* Allow content to expand vertically */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        margin-top: 20px;
+        height: 60px;
+    }
+    .login{
+        min-height: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .info{
+        min-height: 80px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container{
+        width: 350px;
+        height: 530px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px; /* Add some padding to make the shadow visible */
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2); /* Add a shadow with a 5px spread on all sides */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 22px;
+        aspect-ratio: 7/11;
+     }
+     .titles{
+         margin-top: 20px;
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+        height: 100%;
+        width: 100%;
+     }
+     .logininfo{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         gap: 20px;
+         width: 100%;
+         height: 100%;
+     }
+     .logininfo a{
+        text-decoration: none;
+        color: white;
+     }
+    
+    
+     .space{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     input{
+         height: 45px;
+         border: 0.5px solid black; /* Adjust the border thickness as needed */
+         border-radius: 5px; /* Add border-radius to round the corners */
+         font-size: 11pt;
+         width: 100%;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         padding: 10px; /* Add padding to the input element */
+         box-sizing: border-box; /* Include padding and border within the input's total width and height */
+         background-clip: content-box; /* Apply background only to the content box (inside padding) */
+         outline: none; /* Remove the default outline style */
+     }
+     input:focus {
+         border-color:rgb(55, 230, 78);
+         border-width: 2px; 
+     }
+
+    .text-input {
+        height: 320px;
+        width: 100%; /* Set the textarea width to 100% of its parent */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+        resize: unset;
+        margin: 0;
+        padding: 10px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        outline: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11pt;
+    }
+    .text-input:focus {
+        border-color: rgb(55, 230, 78); /* Change border color when focused */
+        border-width: 2px; /* Increase border width when focused */
+    }
+    
+     h1{
+         font-size: 20pt;
+         margin: 0;
+     }
+     h2{
+         font-size: 11pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     h3{
+         font-size: 10pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     span{
+         color: rgb(35, 204, 58);
+         font-weight: bold;
+     }
+     a{
+         text-decoration: none;
+     }
+     button{
+         width: 100%;
+         height: 50px;
+         border: 0; 
+         border-radius: 25px;
+         background-color:rgb(35, 204, 58);
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-size: 12pt;
+     }
+     button:hover{
+         background-color: rgb(38, 160, 54);
+     }
+     button:active{
+        background-color: rgb(21, 105, 32);
+    }
+     hr{
+         width: 90%;
+     }
+    
+
+@media screen and (max-width: 500px) {
+    
+    .logo{
+        min-height: 160px;
+        height: auto; /* Allow content to expand vertically */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        margin-top: 20px;
+        height: 60px;
+    }
+    .login{
+        min-height: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+     .info{
+        min-height: 80px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 5pt;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width: 300px;
+        height: 530px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px; /* Add some padding to make the shadow visible */
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Add a shadow with a 5px spread on all sides */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 22px;
+        aspect-ratio: 7/11;
+     }
+     .titles{
+         margin-top: 20px;
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+     }
+     .logininfo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 20px;
+         width: 100%;
+     }
+     .login-alternativo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 10px;
+         width: 100%;
+     }
+     .space{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     input{
+         height: 45px;
+         border: 0.5px solid black; /* Adjust the border thickness as needed */
+         border-radius: 5px; /* Add border-radius to round the corners */
+         font-size: 11pt;
+         width: 100%;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         padding: 10px; /* Add padding to the input element */
+         box-sizing: border-box; /* Include padding and border within the input's total width and height */
+         background-clip: content-box; /* Apply background only to the content box (inside padding) */
+         outline: none; /* Remove the default outline style */
+     }
+     input:focus {
+         border-color:rgb(55, 230, 78);
+         border-width: 2px; 
+     }
+     h1{
+         font-size: 20pt;
+         margin: 0;
+     }
+     h2{
+         font-size: 11pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     h3{
+         font-size: 10pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     span{
+         color: rgb(35, 204, 58);
+         font-weight: bold;
+     }
+     a{
+         text-decoration: none;
+     }
+     button{
+         width: 100%;
+         height: 50px;
+         border: 0; 
+         border-radius: 25px;
+         background-color:rgb(35, 204, 58);
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-size: 12pt;
+     }
+     button:hover{
+         background-color: rgb(38, 160, 54);
+     }
+     button:active{
+        background-color: rgb(21, 105, 32);
+    }
+     hr{
+         width: 90%;
+     }
+    
+    
+}
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 400px) {
+    
+    .logo{
+        min-height: 160px;
+        height: auto; /* Allow content to expand vertically */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        margin-top: 20px;
+        height: 60px;
+    }
+    .login{
+        min-height: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .info{
+        min-height: 80px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 5pt;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width: 260px;
+        height: 530px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px; /* Add some padding to make the shadow visible */
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Add a shadow with a 5px spread on all sides */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 22px;
+        aspect-ratio: 7/11;
+     }
+     .titles{
+         margin-top: 20px;
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+     }
+     .logininfo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 20px;
+         width: 100%;
+     }
+     .login-alternativo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 10px;
+         width: 100%;
+     }
+     .space{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     input{
+         height: 45px;
+         border: 0.5px solid black; /* Adjust the border thickness as needed */
+         border-radius: 5px; /* Add border-radius to round the corners */
+         font-size: 11pt;
+         width: 100%;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         padding: 10px; /* Add padding to the input element */
+         box-sizing: border-box; /* Include padding and border within the input's total width and height */
+         background-clip: content-box; /* Apply background only to the content box (inside padding) */
+         outline: none; /* Remove the default outline style */
+     }
+     input:focus {
+         border-color:rgb(55, 230, 78);
+         border-width: 2px; 
+     }
+     h1{
+         font-size: 20pt;
+         margin: 0;
+     }
+     h2{
+         font-size: 11pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     h3{
+         font-size: 10pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     span{
+         color: rgb(35, 204, 58);
+         font-weight: bold;
+     }
+     a{
+         text-decoration: none;
+     }
+     button{
+         width: 100%;
+         height: 50px;
+         border: 0; 
+         border-radius: 25px;
+         background-color:rgb(35, 204, 58);
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-size: 12pt;
+     }
+     button:hover{
+         background-color: rgb(38, 160, 54);
+     }
+     button:active{
+        background-color: rgb(21, 105, 32);
+    }
+     hr{
+         width: 90%;
+     }
+    
+}
+
+@media screen and (max-width: 350px) {
+    
+    .logo{
+        min-height: 160px;
+        height: auto; /* Allow content to expand vertically */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        margin-top: 20px;
+        height: 60px;
+    }
+    .login{
+        min-height: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .info{
+        min-height: 80px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 5pt;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width: 220px;
+        height: 530px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px; /* Add some padding to make the shadow visible */
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1); /* Add a shadow with a 5px spread on all sides */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 22px;
+        aspect-ratio: 7/11;
+     }
+     .titles{
+         margin-top: 20px;
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+     }
+     .logininfo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 20px;
+         width: 100%;
+     }
+     .login-alternativo{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 10px;
+         width: 100%;
+     }
+     .space{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     input{
+         height: 45px;
+         border: 0.5px solid black; /* Adjust the border thickness as needed */
+         border-radius: 5px; /* Add border-radius to round the corners */
+         font-size: 11pt;
+         width: 100%;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         padding: 10px; /* Add padding to the input element */
+         box-sizing: border-box; /* Include padding and border within the input's total width and height */
+         background-clip: content-box; /* Apply background only to the content box (inside padding) */
+         outline: none; /* Remove the default outline style */
+     }
+     input:focus {
+         border-color:rgb(55, 230, 78);
+         border-width: 2px; 
+     }
+     h1{
+         font-size: 20pt;
+         margin: 0;
+     }
+     h2{
+         font-size: 11pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     h3{
+         font-size: 10pt;
+         font-weight: lighter;
+         margin: 0;
+     }
+     span{
+         color: rgb(35, 204, 58);
+         font-weight: bold;
+     }
+     a{
+         text-decoration: none;
+     }
+     button{
+         width: 100%;
+         height: 50px;
+         border: 0; 
+         border-radius: 25px;
+         background-color:rgb(35, 204, 58);
+         color: white;
+         font-family: 'Roboto', sans-serif;
+         font-size: 12pt;
+     }
+     button:hover{
+         background-color: rgb(38, 160, 54);
+     }
+     button:active{
+        background-color: rgb(21, 105, 32);
+    }
+     hr{
+         width: 90%;
+     }
+    
+}

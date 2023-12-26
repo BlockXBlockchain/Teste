@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tira Nota</title>
+    <link rel="stylesheet" href="noteexample.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <a href="notes.html"><img src="TiraNota-logo.png" alt="logo"></a>
+        </div>
+        <div class="navegador">
+          <a href="pesquisar.html"><h2>Pesquisar</h2></a>
+          <a href="criar.html"><h2>Criar</h2></a>
+          <a href="useracc.html"><h2>Perfil</h2></a>
+        </div>
+        <div class="mini-menu">
+            <button id="toggle-menu">☰</button>
+        </div>
+    </div>
+
+    <div class="nota">
+        <div class="note">
+            <div>
+                <h1>Como centrar um div ?</h1>
+                <h3 class="space2"></h3>
+                <h2>Para centrar um div deve seguir os seguintes passos :</h2>
+                <h3 class="space"></h3>
+                <h3 class="bold ">Centralizar Horizontalmente :</h3>
+                <h3 class="space2"></h3>
+                <h3 class="bold">Margens Automáticas</h3>
+                <h3>Defina a largura desejada para a sua div e, em seguida, utilize margin-left: auto; e margin-right: auto; para centralizá-la horizontalmente na página.</h3>
+                <h3 class="bold">Text-align</h3>
+                <h3>Se a div estiver dentro de um contêiner, defina text-align: center; no contêiner e certifique-se de que a div tenha display: inline-block.</h3>
+                <h3 class="space"></h3>
+                <h3 class="bold ">Centralizar Vertical e Horizontalmente :</h3>
+                <h3 class="space2"></h3>
+                <h3 class="bold">Flexbox</h3>
+                <h3>No contêiner pai, use display: flex;, justify-content: center; para centralizar horizontalmente e align-items: center; para centralizar verticalmente.</h3>
+                <h3 class="bold">Grid</h3>
+                <h3>Para layouts modernos, utilize display: grid; no contêiner pai e place-items: center; para centralizar tanto vertical quanto horizontalmente.</h3>
+                <h3 class="space"></h3>
+                <h3 class="bold ">Centralizar Vertical e Horizontalmente com Transformação :</h3>
+                <h3 class="space2"></h3>
+                <h3 class="bold">Transform</h3>
+                <h3>No contêiner pai, defina position: relative; e, na div, utilize position: absolute;, top: 50%;, left: 50%;, e transform: translate(-50%, -50%); para centralizar vertical e horizontalmente.</h3>
+                <h3 class="space"></h3>
+                <h3>Escolha a abordagem que melhor se adequa ao seu layout e requisitos específicos. Lembre-se de ajustar os valores conforme necessário para atender às dimensões e estilos desejados para a sua div.</h3>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="favorite">Favorito</button>
+            <a href="pesquisar.html" class="favorite">Pesquisar</a>
+        </div>
+    </div>
+   
+
+   <div class="info">
+        <h4>Política de Privacidade</h4>
+        <h4>Termos de Uso</h4>
+        <h4>Diretrizes da comunidade</h4>
+    </div>
+
+    <script src="index.js"></script>
+   
+</body>
+</html>
